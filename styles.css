@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     scroll-behavior: smooth;
     font-family: 'Noto Serif', serif;
 }
 
-.whole-wrapper{
+.whole-wrapper {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
-header{
+header {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,19 +29,19 @@ header{
     padding: 0 1em;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
     color: black;
     line-height: 1.3;
 }
 
-h1 span{
+h1 span {
     color: #02AEB0;
 }
 
-button{
+button {
     color: #02AEB0;
-    background: white;  
+    background: white;
     margin-top: 2em;
     font-size: 1.2rem;
     font-weight: bolder;
@@ -49,12 +49,12 @@ button{
     cursor: pointer;
 }
 
-.btn{
+.btn {
     position: relative;
     z-index: 1;
 }
 
-.btn::before{
+.btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -68,11 +68,11 @@ button{
     transform-origin: left;
 }
 
-.btn:hover::before{
+.btn:hover::before {
     transform: scaleX(1);
 }
 
-button a{
+button a {
     display: block;
     width: 100%;
     color: #02AEB0;
@@ -82,24 +82,24 @@ button a{
     transition: all .1s ease-in-out;
 }
 
-.btn a:hover{
+.btn a:hover {
     color: white;
 }
 
-.about-me{
+.about-me {
     color: white;
     background-color: #02AEB0;
     padding: 1.5em;
 }
 
-h2{
+h2 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bolder;
     margin: .5em;
 }
 
-.about-me img{
+.about-me img {
     display: block;
     width: 270px;
     height: 270px;
@@ -108,55 +108,55 @@ h2{
     margin: 2em auto 4em auto;
 }
 
-section p{
+section p {
     font-size: 1.2rem;
     margin: 1.5em auto;
     line-height: 1.2;
     max-width: 600px;
-    
+
 }
 
-.about-me button{
+.about-me button {
     background: transparent;
     border-color: white;
     margin-top: 1em;
     margin-bottom: 4em;
 }
 
-.about-me a{
+.about-me a {
     color: white;
 }
 
-.projects{
+.projects {
     color: black;
     padding: 1.5em;
     margin-bottom: 3em;
 }
 
-.project-details{
+.project-details {
     text-align: left;
 }
 
-.projects h3{
+.projects h3 {
     text-transform: capitalize;
     margin-top: 2em;
 }
 
-.projects p{
+.projects p {
     margin: 0;
     margin-top: 1em;
 }
 
-.code-area{
+.code-area {
     display: flex;
     align-items: center;
 }
 
-.projects button{
+.projects button {
     margin-top: 1em;
 }
 
-.code-area p{
+.code-area p {
     font-size: 1.2rem;
     text-transform: capitalize;
     color: #02AEB0;
@@ -164,7 +164,7 @@ section p{
     margin-left: 1em;
 }
 
-.project img{
+.project img {
     display: block;
     max-width: 600px;
     width: 100%;
@@ -173,7 +173,7 @@ section p{
     box-shadow: 2px 5px 6px -3px rgb(2, 2, 2);
 }
 
-.contact-me{
+.contact-me {
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -183,20 +183,20 @@ section p{
     color: white;
 }
 
-.contact-me p{
+.contact-me p {
     font-size: 1.3rem;
 }
 
-.contact-me button{
+.contact-me button {
     border-color: white;
     background: transparent;
 }
 
-.contact-me a{
+.contact-me a {
     color: white;
 }
 
-footer{
+footer {
     height: 300px;
     color: white;
     background: rgba(0, 0, 0, 0.815);
@@ -207,28 +207,30 @@ footer{
 }
 
 .back-to-top,
-.social-links{
+.social-links {
     font-size: 2rem;
     padding: 1em 0;
 }
 
-.back-to-top i{
+.back-to-top i {
     animation: bounce 1.5s infinite;
 }
 
 @keyframes bounce {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.3);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
 
-.social-links{
+.social-links {
     border-width: 200px;
     border-color: grey;
     border-bottom: 1px solid;
@@ -236,95 +238,95 @@ footer{
     justify-content: center;
 }
 
-.social-links i:hover{
+.social-links i:hover {
     transform: translateY(20%);
 }
 
-.social-links a{
+.social-links a {
     display: block;
-    margin: 0  1em;
+    margin: 0 1em;
 }
 
-i{
+i {
     color: white;
     background: transparent;
     margin: 0;
     padding: 0;
 }
 
-footer p{
+footer p {
     margin-top: 1EM;
     color: grey;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: grey;
 }
 
 @media (min-width: 900px) {
-    .whole-wrapper{
+    .whole-wrapper {
         max-width: 100%;
         text-align: unset;
     }
 
-    header{
+    header {
         justify-items: unset;
         align-items: unset;
         padding: 4em;
     }
 
-    h1{
+    h1 {
         font-size: 3.5rem;
     }
 
-    header button{
+    header button {
         width: 220px;
         font-size: 1.7rem;
     }
 
-    h2{
+    h2 {
         text-align: center;
         font-size: 2.5rem;
         margin-bottom: .5em;
     }
 
-    .about-me{
+    .about-me {
         width: 100%;
         align-items: flex-start;
     }
 
-    .about-me-details{
+    .about-me-details {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
 
-    .about-me p{
+    .about-me p {
         text-align: justify;
     }
 
-    .img-container{
+    .img-container {
         margin: 0 2em;
     }
 
-    .projects{
+    .projects {
         padding: 3em;
     }
 
-    .project{
+    .project {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 2em 0;
     }
 
-    .project-details{
+    .project-details {
         width: 37%;
     }
 
-    .project-image{
+    .project-image {
         width: 60%;
         height: 320px;
     }
